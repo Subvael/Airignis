@@ -142,7 +142,7 @@ cython_debug/
 *~*
 
 # Pytest-cov coverage output
-cov_html/
+# cov_html/
 
 # Python idea files
 .idea/

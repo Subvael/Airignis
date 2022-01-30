@@ -1,14 +1,23 @@
 from setuptools import setup
+from sphinx.setup_command import BuildDoc
+
+cmdclass = {'build_sphinx': BuildDoc}
+
+project_name = 'airignis'
+project_version = '0.0.1'
+author = 'Subvael'
+github_url = "https://github.com/Subvael/Airignis"
+author_email = "Subvael@gmail.com"
 
 with open("README.md", "r") as fh:
 	long_description = fh.read()
 
 setup(
-	name='airignis',
-	version='0.0.1',
-	url="https://github.com/Subvael/Airignis",
-	author="Subvael",
-	author_email="Subvael@gmail.com",
+	name=project_name,
+	version=project_version,
+	url=github_url,
+	author=author,
+	author_email=author_email,
 	description='Looking for a C# familiar package to handle events or looking for a very practical and '
 				'intuitive way to schedule periodically launching auto event? Then this package is for you.',
 	py_modules=["airignis/autoevent",
@@ -22,6 +31,14 @@ setup(
 		"License :: OSI Approved :: MIT",
 		"Operating System :: OS Independent",
 	],
+	cmdclass=cmdclass,
+	cmommand_options={
+		'build_sphinx': {
+			'project': ('setup.py', project_name),
+			'version': ('setup.py', project_version),
+			'source_dir': ('setup.py', 'docs')
+		},
+	},
 	long_description=long_description,
 	long_description_content_type="text/markdown",
 	extras_require={
@@ -70,6 +87,6 @@ setup(
 			"tomli==2.0.0"
 			"urllib3==1.26.8"
 			"zipp==3.7.0"
-		],
+			],
 	},
 )

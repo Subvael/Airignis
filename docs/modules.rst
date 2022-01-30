@@ -1,5 +1,5 @@
-airignis-0.0.1
-==============
+src
+===
 
 .. toctree::
    :maxdepth: 4
