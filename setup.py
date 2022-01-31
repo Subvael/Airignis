@@ -4,7 +4,7 @@ from sphinx.setup_command import BuildDoc
 cmdclass = {'build_sphinx': BuildDoc}
 
 project_name = 'airignis'
-project_version = '0.0.1'
+project_version = '0.0.2'
 author = 'Subvael'
 github_url = "https://github.com/Subvael/Airignis"
 author_email = "Subvael@gmail.com"
@@ -22,7 +22,10 @@ setup(
 				'intuitive way to schedule periodically launching auto event? Then this package is for you.',
 	py_modules=["airignis/autoevent",
 				"airignis/duetime",
-				"airignis/event"],
+				"airignis/event",
+				"airignis/exceptions",
+				"airignis/__init__",
+				],
 	package_dir={'': 'src'},
 	classifiers=[
 		"Programming Language :: Python :: 3",
