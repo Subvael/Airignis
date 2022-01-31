@@ -73,6 +73,3 @@ auto_event.stop()
 ## License
 
 &copy; 2022 Subvael
-
-This repository is licensed under the MIT license
-See LICENSE for details

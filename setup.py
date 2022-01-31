@@ -4,7 +4,7 @@ from sphinx.setup_command import BuildDoc
 cmdclass = {'build_sphinx': BuildDoc}
 
 project_name = 'airignis'
-project_version = '0.0.3'
+project_version = '0.0.4'
 author = 'Subvael'
 github_url = "https://github.com/Subvael/Airignis"
 author_email = "Subvael@gmail.com"
@@ -32,7 +32,7 @@ setup(
 		"Programming Language :: Python :: 3.8",
 		"Programming Language :: Python :: 3.9",
 		"Programming Language :: Python :: 3.10",
-		"License :: OSI Approved :: BSD License",
+		"License :: OSI Approved :: MIT License",
 		"Operating System :: OS Independent",
 	],
 	cmdclass=cmdclass,
